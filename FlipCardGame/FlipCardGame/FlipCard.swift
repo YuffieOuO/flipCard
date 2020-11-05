@@ -14,14 +14,17 @@ class FlipCard: UIImageView {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         isFront.toggle()
+        print(isFront)
         
-        if isFront {
+        if isFront == true {
             image = UIImage(named: cardImageName)
+           
         } else {
             image = UIImage(named: "background")
         }
                 
         vc?.fliping(card: self)
     }
+   
 
 }

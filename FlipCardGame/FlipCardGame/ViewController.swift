@@ -41,20 +41,23 @@ class ViewController: UIViewController {
         numberOfFlipCard += 1
         if numberOfFlipCard == 1 {
             firstFlipCard = card
+           
         } else if numberOfFlipCard % 2 == 0 {
             if card.cardImageName == name {
-                print("Y")
+//                print("Y")
             } else {
-                Timer.scheduledTimer(withTimeInterval: 0.2, repeats: false) { timer in
+                Timer.scheduledTimer(withTimeInterval: 0.2, repeats: false) { [self] timer in
                     card.image = UIImage(named: "background")
                     self.firstFlipCard.image =  UIImage(named: "background")
                     timer.invalidate()
+                    card.isFront = false
+                    firstFlipCard.isFront = false
                     self.numberOfFlipCard = 0
                 }
             }
         }
         name = card.cardImageName
-        print("press", card.cardImageName)
+//        print("press", card.cardImageName)
     }
     
 }
