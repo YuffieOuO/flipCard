@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FlipCardGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="HUc-qp-NmP" customClass="FlipCard" customModule="FlipCardGame" customModuleProvider="target">
+                                <rect key="frame" x="25" y="88" width="170" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="5M4-Da-606"/>
+                                    <constraint firstAttribute="height" constant="220" id="Myn-K2-gnw"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="TjL-Mq-23d" customClass="FlipCard" customModule="FlipCardGame" customModuleProvider="target">
+                                <rect key="frame" x="219" y="88" width="170" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="elW-Ob-zgD"/>
+                                    <constraint firstAttribute="width" constant="170" id="pwo-cL-pGo"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="bX0-vu-FGU" customClass="FlipCard" customModule="FlipCardGame" customModuleProvider="target">
+                                <rect key="frame" x="25" y="338" width="170" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="DEq-in-1xY"/>
+                                    <constraint firstAttribute="width" constant="170" id="jRT-D1-zIP"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="UFF-dG-1Od" customClass="FlipCard" customModule="FlipCardGame" customModuleProvider="target">
+                                <rect key="frame" x="25" y="588" width="170" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="LF9-JP-bhL"/>
+                                    <constraint firstAttribute="width" constant="170" id="Xis-VB-3Ho"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="rMP-7Y-rHQ" customClass="FlipCard" customModule="FlipCardGame" customModuleProvider="target">
+                                <rect key="frame" x="219" y="588" width="170" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="XyY-D3-lqY"/>
+                                    <constraint firstAttribute="height" constant="220" id="ifd-EF-J09"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="yws-q3-WvW" customClass="FlipCard" customModule="FlipCardGame" customModuleProvider="target">
+                                <rect key="frame" x="219" y="338" width="170" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="HJB-gO-du4"/>
+                                    <constraint firstAttribute="height" constant="220" id="aPP-Yd-VZH"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UFF-dG-1Od" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="52Q-yW-WSP"/>
+                            <constraint firstItem="bX0-vu-FGU" firstAttribute="top" secondItem="HUc-qp-NmP" secondAttribute="bottom" constant="30" id="7OA-GD-5n7"/>
+                            <constraint firstItem="yws-q3-WvW" firstAttribute="leading" secondItem="bX0-vu-FGU" secondAttribute="trailing" constant="24" id="8wo-F6-L74"/>
+                            <constraint firstItem="TjL-Mq-23d" firstAttribute="leading" secondItem="HUc-qp-NmP" secondAttribute="trailing" constant="24" id="BHq-Z0-shR"/>
+                            <constraint firstItem="UFF-dG-1Od" firstAttribute="top" secondItem="bX0-vu-FGU" secondAttribute="bottom" constant="30" id="C7o-qU-UoD"/>
+                            <constraint firstItem="TjL-Mq-23d" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="FqS-Nr-01s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rMP-7Y-rHQ" secondAttribute="trailing" constant="25" id="MED-XH-qZc"/>
+                            <constraint firstItem="HUc-qp-NmP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="Mf3-fq-6wx"/>
+                            <constraint firstItem="bX0-vu-FGU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="ONH-iX-uKL"/>
+                            <constraint firstItem="bX0-vu-FGU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PF5-VL-FeB"/>
+                            <constraint firstItem="rMP-7Y-rHQ" firstAttribute="top" secondItem="yws-q3-WvW" secondAttribute="bottom" constant="30" id="QD6-vA-qsJ"/>
+                            <constraint firstItem="rMP-7Y-rHQ" firstAttribute="leading" secondItem="UFF-dG-1Od" secondAttribute="trailing" constant="24" id="YjH-gC-rcx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rMP-7Y-rHQ" secondAttribute="bottom" constant="54" id="Zc0-tp-qC6"/>
+                            <constraint firstItem="UFF-dG-1Od" firstAttribute="top" secondItem="bX0-vu-FGU" secondAttribute="bottom" constant="30" id="doC-JR-2ZG"/>
+                            <constraint firstItem="yws-q3-WvW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ehy-dr-vgE"/>
+                            <constraint firstItem="HUc-qp-NmP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="fOm-2E-NON"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UFF-dG-1Od" secondAttribute="bottom" constant="54" id="fSM-y2-Coo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TjL-Mq-23d" secondAttribute="trailing" constant="25" id="kmZ-9P-1e5"/>
+                            <constraint firstItem="yws-q3-WvW" firstAttribute="top" secondItem="TjL-Mq-23d" secondAttribute="bottom" constant="30" id="qUV-pE-cvP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yws-q3-WvW" secondAttribute="trailing" constant="25" id="v1U-1o-Nh3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="card0" destination="HUc-qp-NmP" id="JhM-Q1-kcQ"/>
+                        <outlet property="card1" destination="TjL-Mq-23d" id="DjI-nM-ls3"/>
+                        <outlet property="card2" destination="bX0-vu-FGU" id="84l-Hd-YEw"/>
+                        <outlet property="card3" destination="yws-q3-WvW" id="Wku-Y4-HGl"/>
+                        <outlet property="card4" destination="UFF-dG-1Od" id="2sJ-cq-ct3"/>
+                        <outlet property="card5" destination="rMP-7Y-rHQ" id="qkk-ba-wdw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-201.44927536231884" y="126.5625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="700" height="1244"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
